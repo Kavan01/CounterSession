@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -34,5 +34,154 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Header */
+h1 {
+  font-size: 2.2rem;
+  color: #222;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Counter Section */
+.counter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:nth-child(2) {
+  background: #f44336;
+}
+
+button:nth-child(2):hover {
+  background: #e53935;
+}
+
+button:nth-child(3) {
+  background: #2196f3;
+}
+
+button:nth-child(3):hover {
+  background: #1e88e5;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+/* Form Section */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-size: 1rem;
+  color: #555;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+button[type="submit"] {
+  background: #007bff;
+}
+
+button[type="submit"]:hover {
+  background: #0056b3;
+}
+
+/* Session Data Display */
+.session-data {
+  background: #e3f2fd;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.session-data p {
+  margin: 5px 0;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
   }
 }
